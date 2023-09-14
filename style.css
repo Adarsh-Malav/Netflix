@@ -54,7 +54,8 @@
             height: 36px;
             padding-left: 25px;
             display: flex;
-            border: 2px solid white;
+            border: 2px solid rgb(152, 149, 149);
+            border-radius: 5px;
             width: 116px;
         }
         .drop-select select{
@@ -176,7 +177,7 @@
         /* height: auto; */
         margin: auto 0;
     }
-    .section-two-1 h2, .drop-row h2{
+    .section-two-1 h2{
         font-size: 3rem;
         font-weight: 900;
         color: white;
@@ -202,16 +203,12 @@
     }
     .dropdowns{
         width: 100%;
-        height: 720px;
+        /* height: 720px; */
         background-color: rgb(0, 0, 0);
         border-bottom: 13px solid
         rgb(35,35,35);
     }
-    
-    .drop-row h2{
-        padding-top: 20px;
-        text-align: center;
-    }
+   
 
     .download-overlay{
         display: flex;
@@ -224,7 +221,111 @@
         border-radius: 10px;
         background-color: black;
         justify-content: space-between;
+        align-items: center;
     }
     .download-overlay p{
         color: blue;
+    }
+  
+    .footer{
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+    .footer-col{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .footer-col a{
+        color: #ffffffb3;
+;
+        font-family: sans-serif;
+        margin-top: 14px;
+    }
+    .footer-col div{
+            display: flex;
+            flex-direction: column;
+    }
+    .footer p{
+        font-size: 0.875rem;
+        color: rgba(255,255,255,0.7);
+        font-weight: 400;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        margin-top: 1.5rem;
+    }
+    /* .accordian{
+        width: 100%;
+        height: 90px;
+        background-color: rgb(45,45,45);
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .accordian-down{
+        width: 100%;
+        background-color: rgb(100, 100, 100);
+        height: 0px;
+        margin-top: 1px;
+    }
+    .accordian p{
+        font-family: sans-serif;
+        font-size: 25px;
+        color: white;
+        padding-left: 24px;
+    }
+    .plus{
+        font-size: 35px;
+        color: white;
+
+    }
+     */
+     .accordion {
+        background-color: rgb(45,45,45);
+        cursor: pointer;
+        font-family: sans-serif;
+        font-size: 25px;
+        color: white;
+        padding-left: 24px;
+        width: 100%;
+        height: 90px;
+        margin-top: 10px;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        
+      }
+      
+      .active, .accordion:hover {
+        background-color: #424040;
+      }
+      
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        background-color: rgb(45,45,45);
+        max-height: 0;
+        width: 100%;
+        margin-top: 1px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        font-family: sans-serif;
+        font-size: 24px;
+        color: white;
+        padding: 0 18px;
+    }
+    .panel p{
+        margin-bottom: 10px;
+        margin-top: 10px;
     }

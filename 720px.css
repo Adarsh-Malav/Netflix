@@ -1,0 +1,9 @@
+@media (max-width: 768px) { 
+    .section-two-row{
+        flex-direction: column;
+    }
+    .download-overlay {
+       top: 280px;
+    }
+
+ }

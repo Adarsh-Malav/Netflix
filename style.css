@@ -4,159 +4,128 @@
             padding: 0px;
             box-sizing: border-box;
         }
-        .outer-image{
-            background-image:url(Netflix-images/netflix-background.jpg);
+        
+        .header{
+            background:url(Netflix-images/netflix-background.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-clip: border-box;
-            width: 100%;
-            height: 700px;
-        }
-        .header{
-            width: 100%;
-            height: 680px;
-            position: absolute;
-            z-index: 2;
-            top: 20px;
+            border: 2px solid rgb(0, 0, 0);
             border-bottom: 13px solid
             rgb(35,35,35);
         }
-       .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            width: 100%;
-            height: 700px;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-        }
+       
         .nav{
             width: 80%;
             margin: 0 auto;
-            /* background-color: antiquewhite; */
-            height: 100px;
             display: flex;
-            /* z-index: 2; */
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
         }
         .netflix{
-            width: 208px;
-             height: 73px;
+            width: 15%;
+            /* padding: 40px; */
         }
         .nav-right{
+            padding: 20px 0;
             display: flex;
-            width: 30%;
-            padding-left: 53px;
+            /* width: 30%; */
+            /* padding-left: 53px; */
     
         }
         .drop-select{
-            height: 36px;
-            padding-left: 25px;
+            /* height: 36px; */
+            /* padding: 20px; */
+            /* margin: 0px 0; */
             display: flex;
+            align-items: center;
             border: 2px solid rgb(152, 149, 149);
             border-radius: 5px;
-            width: 116px;
+
+            /* width: 116px; */
         }
         .drop-select select{
             background-color: transparent;
             color: white;
             appearance: none;
-            width: 62px;
+            padding: 0px 25px;
+            /* width: 62px; */
             border: none;
 
         }
-        /* .select::after{
-            content: "\f0d7";
-        }         */
+        
         .btn{
-            height: 36px;
             text-decoration: none;
             color: #fff;
             padding: 6px 20px;
             margin-left:20px ;
             background: #e50914;
             border-radius: 5px;
-            font-size: 1.1rem;
+            font-size: 16px;
             text-align: center;
-            display: block;
-
-        }
-        .nav-right select{
-            width: 135px;
         }
         .section-one{
-            height: 430px;
-            
+            margin-bottom: 100px;
+            padding-bottom: 50px;
         }
         .section-one-1{
             color: white;
             display: flex;
             flex-direction: column;
             text-align: center;
-            width: 100%;
-            /* justify-content:  center; */
-            /* top: 270px; */
-            /* position: absolute;
-            z-index: 2; */
-            margin-top: 150px;
+            margin-top: 100px;
+            padding-top: 100px;
         }
         .section-one-1 h2{
-            font-size: 3rem;
+            font-size: 45px;
             font-weight: 900;
             font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
         }
         .section-one-1 p{
-            font-size: 1.5rem;
             font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
             font-weight: 400;
-            margin-top: 20px;
-            /* font-size: 50px; */
+            margin-top: 10px;
+            font-size: 25px;
         }
         .section-one-2{
-            /* position: absolute; */
-            /* bottom: 8rem; */
+            width: 60%;
+            margin: 0 auto;
+            gap: 10px;
+            /* justify-content: space-between; */
             color: white;
-            /* z-index: 2; */
             display: flex;
-            /* background-color: #e50914; */
-            /* height: 50px; */
-            justify-content: center;
             margin-top: 12px;
         }
         .email{
-            width: 430px;
-            height: 50px;
+            width: 60%;
+            /* height: 50px; */
         }
         .email input{
             background-color: rgb(110, 107, 107);
             opacity: 0.4;
             width: 100%;
-            height: 100%;
+            padding: 15px 0;
         }
         .email input::placeholder{
             color: rgb(255, 255, 255);
             padding-left: 20px;
         }
-        .gs{
-            margin-left: 10px ;
-            width: 230px;
-            height: 50px;
+        
+        .section-one-2 button{
             background-color: #e50914;
-            display: flex;
-            justify-content: center;
-        }
-        .section-one-2 .gs a{
             color: white;
             text-decoration: none;
-            padding-top: 12px;
             font-weight: 600;
             font-family: sans-serif;
             font-size: 24px;
+            padding: 10px 20px;
         }
+
+        /* ------------------------------------------------------------------------ */
     .section-two{
         width: 100%;
-        height: 520px;
+        /* height: 520px; */
         background-color: black;
         border-bottom: 13px solid
         rgb(35,35,35);
@@ -166,10 +135,11 @@
         width: 80%;
         /* background-color: aqua; */
         margin: 0 auto;
-        height: 100%;
+        /* height: 100%; */
     }
     .section-two-row{
         display: flex;
+        padding: 60px 0;
     }
     .section-two-1{
         flex: 1;
@@ -178,29 +148,55 @@
         margin: auto 0;
     }
     .section-two-1 h2{
-        font-size: 3rem;
+        font-size: 48px;
         font-weight: 900;
         color: white;
         font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     }
     .section-two-1 p{
-        font-size: 1.5rem;
+        font-size: 24px;
         font-weight: 400;
         color: white;
         font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     }
     .section-two-2{
         flex: 1;
+        position: relative;
         /* margin: auto 0; */
-
+        /* background-color: antiquewhite; */
+        /* background: url("Netflix-images/video-tv-in-0819.m4v"); */
         /* background-color: rgb(9, 155, 155); */
     }
-    .section-two-2 video{
-        position: absolute;
-        right: 212px;
-        width: 391px;
-        margin-top: 85px;
+    .section-two-wrapper{
+        padding: 0px 0;
     }
+    .tv-rem{
+        /* position: absolute; */
+        /* background: url(Netflix-images/video-tv-in-0819.m4v); */
+        /* z-index: 10; */
+        /* position: absolute;
+        left: 0;
+        top: 0; */
+        width: 90%;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+        top: -35px;
+        /* background-color: #e50914; */
+    }
+    .video{
+        width: 90%;
+        padding: 40px;
+        padding-left: 0;
+        padding-top: 0;
+        margin: 0 auto;
+   
+        /* right: 212px; */
+        /* width: 391px; */
+        /* margin-top: 85px; */
+    }
+
+    /* ---------------------------------------------- */
     .dropdowns{
         width: 100%;
         /* height: 720px; */
@@ -212,12 +208,14 @@
 
     .download-overlay{
         display: flex;
-        width: 290px;
+        width: 70%;
         height: 95px;
         border: 1px solid white;
-        position: relative;
-        bottom: 120px;
-        left: 115px;
+        position: absolute;
+        /* bottom: 120px; */
+        top: 240px;
+        margin-left: 50px;
+        /* left: 115px; */
         border-radius: 10px;
         background-color: black;
         justify-content: space-between;
@@ -226,10 +224,10 @@
     .download-overlay p{
         color: blue;
     }
-  
+  /* --------------------------------------------------- */
     .footer{
-        width: 100%;
-        height: 400px;
+        /* width: 100%;
+        height: 400px; */
         background-color: black;
     }
     .footer-col{
@@ -248,11 +246,11 @@
             flex-direction: column;
     }
     .footer p{
-        font-size: 0.875rem;
+        font-size: 14px;
         color: rgba(255,255,255,0.7);
         font-weight: 400;
         font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-        margin-top: 1.5rem;
+        margin-top: 24px;
     }
     .accordian{
         width: 100%;
@@ -338,7 +336,7 @@
         margin-top: 10px;
     } */
     .dropdowns-down{
-        height: 200px;
+        padding: 40px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
